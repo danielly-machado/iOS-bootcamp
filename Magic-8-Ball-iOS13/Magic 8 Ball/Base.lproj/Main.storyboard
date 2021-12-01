@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fundo Magic Ball 8" translatesAutoresizingMaskIntoConstraints="NO" id="fnR-av-Ma8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-4o-WaQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-Xb-cGv" userLabel="Text View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats going on?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-tI-TpQ">
+                                                <rect key="frame" x="87" y="116" width="240" height="40.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ymw-tI-TpQ" firstAttribute="centerX" secondItem="nwz-Xb-cGv" secondAttribute="centerX" id="DRx-4J-WKX"/>
+                                            <constraint firstItem="Ymw-tI-TpQ" firstAttribute="centerY" secondItem="nwz-Xb-cGv" secondAttribute="centerY" id="EE1-85-a1D"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moW-fz-WQu" userLabel="Ball View">
+                                        <rect key="frame" x="0.0" y="273" width="414" height="272"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="3so-Gh-IgC">
+                                                <rect key="frame" x="104.5" y="49.5" width="205" height="173.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="205" id="SKa-qj-Mwe"/>
+                                                    <constraint firstAttribute="height" constant="173.5" id="UOR-pO-8ZU"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3so-Gh-IgC" firstAttribute="centerY" secondItem="moW-fz-WQu" secondAttribute="centerY" id="Zqu-dV-ELx"/>
+                                            <constraint firstItem="3so-Gh-IgC" firstAttribute="centerX" secondItem="moW-fz-WQu" secondAttribute="centerX" id="kXD-4J-i3Q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-hL-eKa" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="546" width="414" height="272"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIX-Ax-4Tr">
+                                                <rect key="frame" x="117" y="115" width="180" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="RWC-W2-nYr"/>
+                                                    <constraint firstAttribute="height" constant="42" id="SX1-Au-jDX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="The answer is...">
+                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                    <color key="titleShadowColor" systemColor="systemBlueColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bottonAnswerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKq-XW-xhQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TIX-Ax-4Tr" firstAttribute="centerX" secondItem="dtW-hL-eKa" secondAttribute="centerX" id="5Vy-eI-9MX"/>
+                                            <constraint firstItem="TIX-Ax-4Tr" firstAttribute="centerY" secondItem="dtW-hL-eKa" secondAttribute="centerY" id="A2R-jL-dth"/>
+                                            <constraint firstItem="TIX-Ax-4Tr" firstAttribute="centerY" secondItem="dtW-hL-eKa" secondAttribute="centerY" id="One-pO-eLn"/>
+                                            <constraint firstItem="TIX-Ax-4Tr" firstAttribute="centerX" secondItem="dtW-hL-eKa" secondAttribute="centerX" id="xeV-92-5y9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fnR-av-Ma8" secondAttribute="bottom" id="03b-qF-XcP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NbL-4o-WaQ" secondAttribute="bottom" id="1A7-S3-wAb"/>
+                            <constraint firstItem="fnR-av-Ma8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="3gW-TK-le1"/>
+                            <constraint firstItem="NbL-4o-WaQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ln-04-ZfU"/>
+                            <constraint firstItem="NbL-4o-WaQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IAH-cW-fYg"/>
+                            <constraint firstItem="fnR-av-Ma8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OIw-gk-2Q7"/>
+                            <constraint firstItem="fnR-av-Ma8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P6M-Me-T8w"/>
+                            <constraint firstAttribute="bottom" secondItem="fnR-av-Ma8" secondAttribute="bottom" id="PfV-QN-GPR"/>
+                            <constraint firstAttribute="trailing" secondItem="fnR-av-Ma8" secondAttribute="trailing" id="n4O-1E-jO1"/>
+                            <constraint firstItem="fnR-av-Ma8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pTK-x4-jgu"/>
+                            <constraint firstItem="NbL-4o-WaQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pxZ-e5-FVp"/>
+                            <constraint firstItem="fnR-av-Ma8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rvq-hI-Uj5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="3so-Gh-IgC" id="JJF-n5-h9C"/>
+                        <outlet property="textWhatsGoingOn" destination="Ymw-tI-TpQ" id="MVk-cb-hAq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fundo Magic Ball 8" width="341" height="341"/>
+        <image name="ball1" width="305" height="273.5"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
